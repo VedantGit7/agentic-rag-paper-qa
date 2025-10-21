@@ -1,0 +1,95 @@
+[
+  {
+    "title": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM",
+    "summary": "Advancing machine intelligence requires developing the ability to perceive\nacross multiple modalities, much as humans sense the world. We introduce\nOmniVinci, an initiative to build a strong, open-source, omni-modal LLM. We\ncarefully study the design choices across model architecture and data curation.\nFor model architecture, we present three key innovations: (i) OmniAlignNet for\nstrengthening alignment between vision and audio embeddings in a shared\nomni-modal latent space; (ii) Temporal Embedding Grouping for capturing\nrelative temporal alignment between vision and audio signals; and (iii)\nConstrained Rotary Time Embedding for encoding absolute temporal information in\nomni-modal embeddings. We introduce a curation and synthesis pipeline that\ngenerates 24M single-modal and omni-modal conversations. We find that\nmodalities reinforce one another in both perception and reasoning. Our model,\nOmniVinci, outperforms Qwen2.5-Omni with +19.05 on DailyOmni (cross-modal\nunderstanding), +1.7 on MMAR (audio), and +3.9 on Video-MME (vision), while\nusing just 0.2T training tokens - a 6 times reduction compared to\nQwen2.5-Omni's 1.2T. We finally demonstrate omni-modal advantages in downstream\napplications spanning robotics, medical AI, and smart factory.",
+    "url": "http://arxiv.org/abs/2510.15870v1",
+    "authors": [
+      "Hanrong Ye",
+      "Chao-Han Huck Yang",
+      "Arushi Goel",
+      "Wei Huang",
+      "Ligeng Zhu",
+      "Yuanhang Su",
+      "Sean Lin",
+      "An-Chieh Cheng",
+      "Zhen Wan",
+      "Jinchuan Tian",
+      "Yuming Lou",
+      "Dong Yang",
+      "Zhijian Liu",
+      "Yukang Chen",
+      "Ambrish Dantrey",
+      "Ehsan Jahangiri",
+      "Sreyan Ghosh",
+      "Daguang Xu",
+      "Ehsan Hosseini-Asl",
+      "Danial Mohseni Taheri",
+      "Vidya Murali",
+      "Sifei Liu",
+      "Jason Lu",
+      "Oluwatobi Olabiyi",
+      "Frank Wang",
+      "Rafael Valle",
+      "Bryan Catanzaro",
+      "Andrew Tao",
+      "Song Han",
+      "Jan Kautz",
+      "Hongxu Yin",
+      "Pavlo Molchanov"
+    ],
+    "published": "2025-10-17T17:59:59+00:00"
+  },
+  {
+    "title": "BiomedXPro: Prompt Optimization for Explainable Diagnosis with Biomedical Vision Language Models",
+    "summary": "The clinical adoption of biomedical vision-language models is hindered by\nprompt optimization techniques that produce either uninterpretable latent\nvectors or single textual prompts. This lack of transparency and failure to\ncapture the multi-faceted nature of clinical diagnosis, which relies on\nintegrating diverse observations, limits their trustworthiness in high-stakes\nsettings. To address this, we introduce BiomedXPro, an evolutionary framework\nthat leverages a large language model as both a biomedical knowledge extractor\nand an adaptive optimizer to automatically generate a diverse ensemble of\ninterpretable, natural-language prompt pairs for disease diagnosis. Experiments\non multiple biomedical benchmarks show that BiomedXPro consistently outperforms\nstate-of-the-art prompt-tuning methods, particularly in data-scarce few-shot\nsettings. Furthermore, our analysis demonstrates a strong semantic alignment\nbetween the discovered prompts and statistically significant clinical features,\ngrounding the model's performance in verifiable concepts. By producing a\ndiverse ensemble of interpretable prompts, BiomedXPro provides a verifiable\nbasis for model predictions, representing a critical step toward the\ndevelopment of more trustworthy and clinically-aligned AI systems.",
+    "url": "http://arxiv.org/abs/2510.15866v1",
+    "authors": [
+      "Kaushitha Silva",
+      "Mansitha Eashwara",
+      "Sanduni Ubayasiri",
+      "Ruwan Tennakoon",
+      "Damayanthi Herath"
+    ],
+    "published": "2025-10-17T17:58:31+00:00"
+  },
+  {
+    "title": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
+    "summary": "Large language models (LLMs) are moving beyond static uses and are now\npowering agents that learn continually during their interaction with external\nenvironments. For example, agents can learn reusable skills while navigating\nweb pages or toggling new tools. However, existing methods for skill learning\noften create skills that are over-specialized to a single website and fail to\ngeneralize. We introduce PolySkill, a new framework that enables agents to\nlearn generalizable and compositional skills. The core idea, inspired by\npolymorphism in software engineering, is to decouple a skill's abstract goal\n(what it accomplishes) and its concrete implementation (how it is executed).\nExperiments show that our method (1) improves skill reuse by 1.7x on seen\nwebsites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on\nunseen websites, while reducing steps by over 20%. (3) In self-exploration\nsettings without specified tasks, our framework improves the quality of\nproposed tasks and enables agents to learn generalizable skills that work\nacross different sites. By enabling the agent to identify and refine its own\ngoals, the PolySkill enhances the agent's ability to learn a better curriculum,\nleading to the acquisition of more generalizable skills compared to baseline\nmethods. This work provides a practical path toward building agents capable of\ncontinual learning in adaptive environments. Our findings show that separating\na skill's goal from its execution is a crucial step toward developing\nautonomous agents that can learn and generalize across the open web\ncontinuously.",
+    "url": "http://arxiv.org/abs/2510.15863v1",
+    "authors": [
+      "Simon Yu",
+      "Gang Li",
+      "Weiyan Shi",
+      "Peng Qi"
+    ],
+    "published": "2025-10-17T17:56:00+00:00"
+  },
+  {
+    "title": "PokeeResearch: Effective Deep Research via Reinforcement Learning from AI Feedback and Robust Reasoning Scaffold",
+    "summary": "Tool-augmented large language models (LLMs) are emerging as deep research\nagents, systems that decompose complex queries, retrieve external evidence, and\nsynthesize grounded responses. Yet current agents remain limited by shallow\nretrieval, weak alignment metrics, and brittle tool-use behavior. We introduce\nPokeeResearch-7B, a 7B-parameter deep research agent built under a unified\nreinforcement learning framework for robustness, alignment, and scalability.\nPokeeResearch-7B is trained by an annotation-free Reinforcement Learning from\nAI Feedback (RLAIF) framework to optimize policies using LLM-based reward\nsignals that capture factual accuracy, citation faithfulness, and instruction\nadherence. A chain-of-thought-driven multi-call reasoning scaffold further\nenhances robustness through self-verification and adaptive recovery from tool\nfailures. Among 10 popular deep research benchmarks, PokeeResearch-7B achieves\nstate-of-the-art performance among 7B-scale deep research agents. This\nhighlights that careful reinforcement learning and reasoning design can produce\nefficient, resilient, and research-grade AI agents. The model and inference\ncode is open-sourced under MIT license at\nhttps://github.com/Pokee-AI/PokeeResearchOSS.",
+    "url": "http://arxiv.org/abs/2510.15862v1",
+    "authors": [
+      "Yi Wan",
+      "Jiuqi Wang",
+      "Liam Li",
+      "Jinsong Liu",
+      "Ruihao Zhu",
+      "Zheqing Zhu"
+    ],
+    "published": "2025-10-17T17:53:06+00:00"
+  },
+  {
+    "title": "InfiMed-ORBIT: Aligning LLMs on Open-Ended Complex Tasks via Rubric-Based Incremental Training",
+    "summary": "Large Language Models (LLMs) have shown substantial advances through\nreinforcement learning (RL), particularly in domains where rewards can be\nprogrammatically verified, such as mathematics and code. In these areas, models\nbenefit from a well-defined operational base guided by explicit rule-based\nobjectives. However, this progress reveals a significant limitation: in\nopen-ended domains where rewards are ambiguous, subjective, or\ncontext-dependent, such as creative writing, scientific reasoning, and notably\nmedical consultation, robust reward functions are lacking, making these areas\nchallenging for current RL strategies. To bridge this gap, we introduce ORBIT,\nan open-ended rubric-based incremental training framework specifically designed\nfor high-stakes medical dialogue. ORBIT integrates syn- thetic dialogue\ngeneration with the dynamic creation of rubrics, employing these rubrics to\ndirect an incremental RL process. In particular, this approach does not depend\non external medical knowledge or manual rules, instead utilizing rubric-guided\nfeedback to shape learning. When implemented on the Qwen3-4B-Instruct model,\nour method can greatly enhance its performance on the HealthBench-Hard\nbenchmark from 7.0 to 27.2 using only 2k samples, thus achieving\nstate-of-the-art results for models of this scale. Our analysis confirms that\nrubric-driven RL fos-ters consistent performance gains across diverse\nconsultation scenarios, going beyond simple numerical improvements. These\nfindings underscore rubric-based feedback as a scalable strategy for advancing\nLLMs in intricate, open-ended tasks.",
+    "url": "http://arxiv.org/abs/2510.15859v1",
+    "authors": [
+      "Pengkai Wang",
+      "Qi Zuo",
+      "Pengwei Liu",
+      "Zhijie Sang",
+      "Congkai Xie",
+      "Hongxia Yang"
+    ],
+    "published": "2025-10-17T17:51:28+00:00"
+  }
+]
