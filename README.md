@@ -18,9 +18,9 @@ Powered by **LangChain**, **FAISS**, **Sentence Transformers**, **Ollama (local 
 ## 📦 Installation
 
 Clone the repository and install dependencies:
-git clone https://github.com/VedantWedhaneGit/agentic-rag-paper-qa.git
-cd agentic-rag-paper-qa
-pip install -r requirements.txt
+git clone https://github.com/VedantGit7/agentic-rag-paper-qa.git
+- cd agentic-rag-paper-qa
+- pip install -r requirements.txt
 
 Install [Ollama](https://ollama.com/download) for LLM-powered answers:
 
